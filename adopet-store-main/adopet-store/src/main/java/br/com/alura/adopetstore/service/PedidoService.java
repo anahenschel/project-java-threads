@@ -26,7 +26,7 @@ public class PedidoService {
     @Autowired
     private EstoqueRepository estoqueRepository;
 
-    @Transactional
+   // @Transactional
     public PedidoDTO cadastrar(CadastroPedidoDTO dto, Usuario usuario) {
         var itens = new ArrayList<ItemPedido>();
         for (var itemDto : dto.itens()) {
